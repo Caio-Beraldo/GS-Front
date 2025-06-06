@@ -1,0 +1,317 @@
+:root {
+            --azul-principal: #1a6bc4;
+            --azul-escuro: #0d4b8a;
+            --laranja: #ff6b35;
+            --fundo-claro: #f7f9fc;
+            --texto-escuro: #2d3748;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--texto-escuro);
+            background-color: var(--fundo-claro);
+        }
+        
+        .cabecalho {
+            background: var(--azul-principal);
+            color: white;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .logo i {
+            color: var(--laranja);
+        }
+        
+        
+        .menu-mobile {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+        
+        .menu-principal {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .menu-principal a {
+            color: white;
+            text-decoration: none;
+        }
+        
+       
+        .secao-hero {
+            min-height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/banner.webp') no-repeat center center/cover;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding-top: 70px;
+        }
+        
+        .hero-titulo {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        
+        .botao {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: var(--laranja);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .botao:hover {
+            background-color: #e05a2b;
+            color: white;
+        }
+        
+        .botao-outline {
+            background-color: transparent;
+            border: 2px solid white;
+        }
+        
+        .botao-outline:hover {
+            background-color: white;
+            color: var(--azul-principal);
+        }
+        
+        
+        .secao {
+            padding: 80px 0;
+        }
+        
+        .titulo-secao {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .titulo-secao h2 {
+            color: var(--azul-principal);
+            font-size: 2.2rem;
+        }
+        .titulo-contato{
+            color: white;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .cartao-funcionalidade {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+        }
+        
+        .cartao-funcionalidade:hover {
+            transform: translateY(-10px);
+        }
+        
+        .icone-funcionalidade {
+            font-size: 3rem;
+            color: var(--azul-principal);
+            margin-bottom: 20px;
+        }
+        
+        
+        .sistema-bombas {
+            background-color: #e8f2ff;
+        }
+        
+        .imagem-bomba {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .imagem-bomba img {
+            width: 100%;
+            transition: transform 0.5s;
+        }
+        
+        .imagem-bomba:hover img {
+            transform: scale(1.05);
+        }
+        
+        
+        .celular-alerta {
+            position: relative;
+            width: 300px;
+            height: 600px;
+            margin: 0 auto;
+            
+        }
+        
+        .notificacao {
+            position: absolute;
+            top: 120px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 85%;
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            animation: aparecer 0.5s ease-out;
+        }
+        
+        @keyframes aparecer {
+            from {
+                transform: translateX(-50%) translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(-50%) translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        
+        .rodape {
+            background: var(--texto-escuro);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .logo-rodape {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .redes-sociais a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            color: white;
+            margin-right: 10px;
+        }
+        
+        .secao-video {
+            background-color: #deedff;
+            text-align: center;
+            padding: 3%;
+        }
+        .container-video {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            width: 90%;
+        }
+        
+        .wrapper-video {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; 
+        }
+        
+        .video-pitch {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            background-color: #000;
+        }
+        
+        .botao-play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70px;
+            height: 70px;
+            background-color: rgba(255, 107, 53, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+            z-index: 2; 
+        }
+        
+        .botao-play:hover {
+            background-color: rgba(255, 107, 53, 1);
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+        
+        .botao-play i {
+            color: white;
+            font-size: 1.8rem;
+            margin-left: 5px;
+        }
+        
+       
+        .video-pitch::-webkit-media-controls-play-button {
+            display: none !important;
+        }
+        
+        
+        @media (max-width: 768px) {
+            .botao-play {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .botao-play i {
+                font-size: 1.5rem;
+            }
+        }
+       
+        @media (max-width: 768px) {
+            .menu-mobile {
+                display: block;
+            }
+            
+            .menu-principal {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: var(--azul-principal);
+                flex-direction: column;
+                padding: 20px;
+            }
+            
+            .menu-principal.mostrar {
+                display: flex;
+            }
+            
+            .hero-titulo {
+                font-size: 2rem;
+            }
+            
+            .botao {
+                display: block;
+                width: 100%;
+                margin-right: 0;
+            }
+        }
